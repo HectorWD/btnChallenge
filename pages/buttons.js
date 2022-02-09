@@ -4,6 +4,7 @@ import React from 'react'
 import Buttons from '../components/Buttons'
 
 const buttons = () => {
+    const bg=useColorModeValue('gray.400', 'gray.900');
     return (
         <Container>
             <Heading
@@ -31,7 +32,7 @@ const buttons = () => {
                         {'&:hover, &:focus'}
                     </Text>
                     <Buttons
-                        _hover={{ backgroundColor: useColorModeValue('gray.400', 'gray.900') }}
+                        _hover={{ backgroundColor:bg }}
                     />
                 </Box>
                 <Box>
@@ -46,7 +47,7 @@ const buttons = () => {
                     </Text>
                     <Buttons
                         variant='outline'
-                        _hover={{ backgroundColor: useColorModeValue('gray.400', 'gray.900') }}
+                        _hover={{ backgroundColor: bg }}
                     />
                 </Box>
                 <Box>
@@ -63,7 +64,7 @@ const buttons = () => {
                     </Text>
                     <Buttons
                         variant='text'
-                        _hover={{ backgroundColor: useColorModeValue('gray.400', 'gray.900') }}
+                        _hover={{ backgroundColor: bg }}
                     />
                 </Box>
                 <Box>
