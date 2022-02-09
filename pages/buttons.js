@@ -1,10 +1,10 @@
 import { ChatIcon } from '@chakra-ui/icons'
-import { Box, Button, Container, Heading, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, Container, Heading, SimpleGrid, Text, useColorModeValue as ValorDeColor} from '@chakra-ui/react'
 import React from 'react'
 import Buttons from '../components/Buttons'
 
 const buttons = () => {
-    const bg=useColorModeValue('gray.400', 'gray.900');
+    const bg=ValorDeColor('gray.400', 'gray.900');
     return (
         <Container>
             <Heading
