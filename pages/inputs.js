@@ -1,9 +1,9 @@
 import { PhoneIcon, UnlockIcon } from '@chakra-ui/icons'
-import { background, Box, Button, Container, Heading, InputGroup, InputLeftElement, InputRightElement, SimpleGrid, Text, Textarea, Tooltip } from '@chakra-ui/react'
+import { Box, Container, Heading, InputGroup, InputLeftElement, InputRightElement, SimpleGrid, Text, Textarea } from '@chakra-ui/react'
 import React from 'react'
 import { Inputs } from '../components/Inputs'
 
-const inputs = () => {
+const Inputs = () => {
     return (
         <Container>
             <Box>
@@ -81,9 +81,9 @@ const inputs = () => {
                         <InputGroup>
                             <InputLeftElement
                                 pointerEvents={'none'}
-                                children={<PhoneIcon />}
-                            />
-                            <Inputs/>
+                            ><PhoneIcon />
+                            </InputLeftElement>
+                            <Inputs />
                         </InputGroup>
                     </Box>
                     <Box>
@@ -96,39 +96,40 @@ const inputs = () => {
                         <InputGroup>
                             <InputRightElement
                                 pointerEvents={'none'}
-                                children={<UnlockIcon />}
-                            />
-                            <Inputs/>
+                            >
+                                <UnlockIcon />
+                            </InputRightElement>
+                            <Inputs />
                         </InputGroup>
                     </Box>
-                    
+
                 </SimpleGrid>
                 <SimpleGrid
-                mt={8}
-                mb={8}
-                columns={2}
-                minChildWidth='150px'
-                spacing={10}
+                    mt={8}
+                    mb={8}
+                    columns={2}
+                    minChildWidth='150px'
+                    spacing={10}
                 >
                     <Box>
                         <Text> {'<Input size="sm"/>'} </Text>
-                        <Inputs size='sm'/>
+                        <Inputs size='sm' />
                     </Box>
                     <Box>
                         <Text> {'<Input size="md"/>'} </Text>
-                        <Inputs size='md'/>
+                        <Inputs size='md' />
                     </Box>
                     <Box>
                         <Text> {'<Input size="lg"/>'} </Text>
-                        <Inputs size='lg'/>
+                        <Inputs size='lg' />
                     </Box>
                     <Box>
                         <Text> {'<Input size="lg"/>'} </Text>
-                        <Inputs size='lg'/>
+                        <Inputs size='lg' />
                     </Box>
                     <Box>
                         <Text> {'<Textarea/>'} </Text>
-                        <Textarea borderColor={'green.300'}/>
+                        <Textarea borderColor={'green.300'} />
                     </Box>
                 </SimpleGrid>
             </Box>
@@ -136,4 +137,4 @@ const inputs = () => {
     )
 }
 
-export default inputs
+export default Inputs
