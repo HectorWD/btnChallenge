@@ -65,45 +65,7 @@ const Inputs = () => {
                         <Text>Something</Text>
                     </Box>
                 </SimpleGrid>
-                <SimpleGrid
-                    mt={8}
-                    columns={1}
-                    minChildWidth='250px'
-                    spacing={10}
-                >
-                    <Box>
-                        <Text> {`
-                        <InputGroup>
-                        <InputLeftElement pointerEvents={'none'}children={<PhoneIcon/>}/>
-                        <Input/>
-                        </InputGroup>
-                        `}</Text>
-                        <InputGroup>
-                            <InputLeftElement
-                                pointerEvents={'none'}
-                            ><PhoneIcon />
-                            </InputLeftElement>
-                            <Inputs />
-                        </InputGroup>
-                    </Box>
-                    <Box>
-                        <Text> {`
-                        <InputGroup>
-                        <InputRightElement pointerEvents={'none'}children={<UnlockIcon/>}/>
-                        <Input/>
-                        </InputGroup>
-                        `}</Text>
-                        <InputGroup>
-                            <InputRightElement
-                                pointerEvents={'none'}
-                            >
-                                <UnlockIcon />
-                            </InputRightElement>
-                            <Inputs />
-                        </InputGroup>
-                    </Box>
-
-                </SimpleGrid>
+                
                 <SimpleGrid
                     mt={8}
                     mb={8}
