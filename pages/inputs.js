@@ -3,7 +3,7 @@ import { Box, Container, Heading, InputGroup, InputLeftElement, InputRightElemen
 import React from 'react'
 import { Inputs } from '../components/Inputs'
 
-const Inputs = () => {
+const InputsPage = () => {
     return (
         <Container>
             <Box>
@@ -137,4 +137,4 @@ const Inputs = () => {
     )
 }
 
-export default Inputs
+export default InputsPage
