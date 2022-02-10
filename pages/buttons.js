@@ -29,7 +29,7 @@ const buttons = () => {
                 </Box>
                 <Box>
                     <Text>
-                        {'&:hover, &:focus'}
+                        {'_hover, _focus'}
                     </Text>
                     <Buttons
                         _hover={{ backgroundColor:bg }}
